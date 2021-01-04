@@ -1,0 +1,59 @@
+/******************************************
+/* CSS
+/*******************************************/
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clear {
+	clear: both;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  background: url(https://media.self.com/photos/5d03c7c02ce42b4972311c0f/4:3/w_2560%2Cc_limit/professional-astrologer-update.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.contain {
+ display: flex;
+ justify-content: center;
+ background-color: #3c1647;
+ border: 2px solid white;
+ border-radius: 20px;
+ position: fixed;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+ font-family: 'Roboto', sans-serif;
+ font-size: 20px;
+ font-weight: bold;
+ color: white;
+ padding: 3%;
+ width: 35rem;
+ height: 30rem;
+}
+.ymd {
+  display: flex;
+  justify-content: center;
+}
+input {
+ width: 10rem;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
