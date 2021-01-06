@@ -14,15 +14,19 @@
 		<section class="contain">
 			<form name="zodiac">
 				<section class="ymd">
+					<label id='label' for='dob'>Input your birthday to find out who you are in the Office!</label>
+					<br>
+					<input type='date' id='dob'>
+					<button type='submit' id='generate'>Generate</button>
 				<div class="year">
 					<p>Day:</p>
-					<input type="number" name="date" value="Day" onClick=value="">
+					<input id="day" type="number" name="day">
 				</div>
 				<div class="month">
 					<p>Month:</p>
 					<section>
-						<select name="month">
-							<option value="x">Birth Month</option>
+						<select id="month" name="month">
+							<option hidden value="x">Birth Month</option>
 							<option value="1">January</option>
 							<option value="2">February</option>
 							<option value="3">March</option>
@@ -40,22 +44,20 @@
 				</div>
 				<div class="day">
 					<p>Year:</p>
-					<input type="number" name="year" value="Birth Year" onClick=value="">
+					<input id="year" type="number" name="year">
 				</div>
 			</section>
 			<br>
-			<input type="button" value="Calculate" onClick="signs()">
+			<button id="calc" type="button">Calculate</button>
 				<div class="sunSign">
 					<p>Sun Sign:</p>
-					<input type="text" name="sign" value="">
-					<span id="result-sunSign"></span>
-					<span id="result-sunSign-description"></span>
+					<span id="resultSunSign"></span>
+					<span id="resultSunSignDescription"></span>
 				</div>
 				<div class="chineseSign">
 					<p>Chinese Sign:</p>
-					
 					<span name="csign" id="resultChineseSign"></span>
-					<span id="result-chineseSign-description"></span>
+					<span id="resultChineseSignDescription"></span>
 				</div>
 			</form>
 		</section>
