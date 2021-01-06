@@ -52,7 +52,9 @@ body {
 input {
  width: 10rem;
 }
-
+#hide:nth-of-type(0) {
+  display: none;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
