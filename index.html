@@ -1,89 +1,35 @@
-<!doctype html>
-<html class="no-js" lang="">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>My Horoscope</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/main.css">
-  <script src="js/main.js"></script>
-</head>
-
-<body>
-  <section class="contain">
-    <form name="zodiac">
-      <center>
-        <table class="box">
-          <tr>
-            <td>
-              <p>Year</p>
-            </td>
-            <td>
-              <div><input type="text" name="year" value="Birth Year" onClick=value=""></div>
-            </td>
-          <tr>
-            <td>
-              <p>Month</p>
-            </td>
-            <td>
-              <section>
-                <select name="month">
-                  <option value="x">Select Birth Month</option>
-                  <option value="1">January</option>
-                  <option value="2">February</option>
-                  <option value="3">March</option>
-                  <option value="4">April</option>
-                  <option value="5">May</option>
-                  <option value="6">June</option>
-                  <option value="7">July</option>
-                  <option value="8">August</option>
-                  <option value="9">September</option>
-                  <option value="10">October</option>
-                  <option value="11">November</option>
-                  <option value="12">December</option>
-                </select>
-              </section>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Day</p>
-            </td>
-            <td>
-              <section>
-                <input type="text" name="date" value="Day" onClick=value="">
-            </td>
-            <td>
-              <input type="button" value="Calculate" onClick="signs()">
-  </section>
-  </td>
-  </tr>
-  <tr>
-    <td>
-      <p>Sun Sign:</p>
-    </td>
-    <td>
-      <section>
-        <input type="text" name="sign" value="">
-        </section< /td>
-  </tr>
-  </tr>
-  <tr>
-    <td>
-      <p>Chinese Sign:</p>
-    </td>
-    <td>
-      <section>
-        <input type="text" name="csign">
-      </section>
-    </td>
-  </tr>
-  </table>
-  </center>
-  </form>
-  </section>
-</body>
-<script src="js/main.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Horoscope</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+<section class="contain ">
+	<div class="main">
+		<h1>HoroScope Astrology</h1>
+		<p>Enter your birthday</p>
+		<form name="zodiac">
+			<section class="ymd">
+			<input type="date" id="date">
+			<button type="button" id="gene">Enter</button>
+			</section>
+			<p id="img"></p>
+			<p id="astrology"></p>
+			<p id="element"></p>
+			<p id="planet"></p>
+			<p id="compatibility"></p>
+			<p id="strengths"></p>
+			<p id="weaknesses"></p>
+		</form>
+	</div>
+</section>
+	</body>
+	<script type="text/javascript" src="js/main.js"></script>
 </html>
