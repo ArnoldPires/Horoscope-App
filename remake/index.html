@@ -11,17 +11,25 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<section class="contain">
-			<h1>HoroScope Astrology</h1>
-			<form name="zodiac">
-				<section class="ymd">
-					<label id='label' for='dob'>Input your birthday to find out</label>
-					<br>
-					<input type='date' id='dob'>
-					<button type='submit' id='generate'>Generate</button>
-				</section>
-			</form>
-		</section>
+<section class="contain ">
+	<div class="main">
+		<h1>HoroScope Astrology</h1>
+		<p>Enter your birthday</p>
+		<form name="zodiac">
+			<section class="ymd">
+			<input type="date" id="date">
+			<button type="button" id="gene">Enter</button>
+			</section>
+			<p id="img"></p>
+			<p id="astrology"></p>
+			<p id="element"></p>
+			<p id="planet"></p>
+			<p id="compatibility"></p>
+			<p id="strengths"></p>
+			<p id="weaknesses"></p>
+		</form>
+	</div>
+</section>
 	</body>
 	<script type="text/javascript" src="js/main.js"></script>
 </html>
