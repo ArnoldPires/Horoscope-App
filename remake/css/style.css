@@ -28,29 +28,43 @@ body {
   background-size: cover;
 }
 .contain {
- display: flex;
- justify-content: center;
- background-color: #3c1647;
+ background-color: #3c1647f0;
  border: 2px solid white;
  border-radius: 20px;
- position: fixed;
- left: 50%;
- top: 50%;
- transform: translate(-50%, -50%);
  font-family: 'Roboto', sans-serif;
  font-size: 20px;
  font-weight: bold;
  color: white;
- padding: 3%;
+ display: flex;
+ justify-content: center;
+ padding: 1%;
  width: 35rem;
- height: 30rem;
+ height: 44rem;
+ margin: 0 auto;
+ margin-top: 2rem;
+}
+h1, p {
+  text-align: center;
+  margin: 0;
+  padding: 1%;
+}
+h1 {
+  text-shadow: -1px 0 rgb(203, 8, 241), 0 2px rgb(203, 8, 241), 2px 0 rgb(203, 8, 241), 0 -1px rgb(203, 8, 241);
 }
 .ymd {
   display: flex;
   justify-content: center;
+  padding-bottom: 1%;
+}
+#astrology {
+  font-size: 3rem;
+}
+#element::first-line, #planet::first-line, #compatibility::first-line, #strengths::first-line, #weaknesses::first-line {
+   text-shadow: -1px 0 rgb(203, 8, 241), 0 2px rgb(203, 8, 241), 2px 0 rgb(203, 8, 241), 0 -1px rgb(203, 8, 241);
 }
 input {
- width: 10rem;
+ width: 12rem;
+ margin-right: 1%;
 }
 #hide:nth-of-type(0) {
   display: none;
@@ -59,3 +73,33 @@ input {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .contain {
+    width: 26rem;
+    height: 41rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .contain {
+    width: 21rem;
+    height: 43rem;
+    margin-top: 0;
+  }
+  h1{
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .contain {
+    width: 17rem;
+    height: 40rem;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  #astrology {
+    font-size: 3rem;
+  }
+}
