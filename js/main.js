@@ -1,5 +1,5 @@
-btn = document.getElementById("gene");
-btn.addEventListener("click", horoscope);
+button = document.getElementById("gene");
+button.addEventListener("click", horoscope);
 
 function horoscope() {
   let bday = document.getElementById("date").value;
